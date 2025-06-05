@@ -1,0 +1,11 @@
+---
+- name: install and start nginx
+  hosts: all
+  roles:
+    - role: nginx
+      tags:
+        - nginx
+    - role: docker
+      tags:
+        -docker
+

@@ -1,0 +1,29 @@
+---
+all:
+  hosts:
+    ubuntuhost-1:
+      ansible_host: 192.168.56.121
+      ansible_user: vagrant
+      ansible_private_key_file: "/home/ali/.vagrant.d/insecure_private_key"
+      ansible_python_interpreter: /usr/bin/python3.10 
+    ubuntuhost-2:
+      ansible_host: 192.168.56.122
+      ansible_user: vagrant
+      ansible_private_key_file: "/home/ali/.vagrant.d/insecure_private_key"
+      ansible_python_interpreter: /usr/bin/python3.10
+web1:
+  hosts:
+    ubuntuhost-1:
+      ansible_host: 192.168.56.121
+      ansible_user: vagrant
+      ansible_private_key_file: "/home/ali/.vagrant.d/insecure_private_key"
+      ansible_python_interpreter: /usr/bin/python3.10
+web2:
+  hosts:
+    ubuntuhost-2:
+      ansible_host: 192.168.56.122
+      ansible_user: vagrant
+      ansible_private_key_file: "/home/ali/.vagrant.d/insecure_private_key"
+      ansible_python_interpreter: /usr/bin/python3.10
+
+
